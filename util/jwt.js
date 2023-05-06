@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const commonUtil = require('./common');
 
-class JWTUtil {
+class JWT {
     #response = {"status": false, "message": "Jwt functionality failed."}
     #defaultSecretKey = process.env.SECRET_KEY;
 
@@ -61,4 +61,4 @@ class JWTUtil {
     }
 }
 
-module.exports = JWTUtil;
+module.exports = JWT;
